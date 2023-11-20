@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/modelWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp"/>
+    <TextView
+    android:id="@+id/webPlaceholderTextView"
+    android:visibility="gone"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:elevation="2dp"
+    android:textSize="@dimen/_15ssp"
+    android:textStyle="bold"
+    android:text="Oops! No internet. Please ask for help."
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="@+id/modelWebView"
+    app:layout_constraintEnd_toEndOf="@+id/modelWebView"
+    app:layout_constraintStart_toStartOf="@+id/modelWebView"
+    app:layout_constraintTop_toTopOf="@+id/modelWebView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
