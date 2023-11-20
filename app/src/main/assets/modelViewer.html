@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+<div>
+    <model-viewer
+            id="3DModelViewer"
+            src="https://nuyun-kalamullage.github.io/Android-3D-Model-Integration-Java/app/src/main/assets/RobotExpressive.glb"
+            loading="auto"
+            ar-modes="webxr scene-viewer quick-look"
+            poster="robotPoster.png"
+            shadow-intensity="2"
+            camera-controls
+            disable-zoom
+            touch-action="pan-y"
+            exposure="0.9"
+            shadow-softness="0.65"
+            animation-name="Wave"
+            style="width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; z-index: 0; display: block;">
+    </model-viewer>
+
+</div>
+<!--<script src="./Android.js"></script>-->
+<script src="3DModelModule.js"></script>
+</body>
+</html>
